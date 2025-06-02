@@ -1,0 +1,49 @@
+/* Reset default margins */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/* Fullscreen video */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay content */
+.overlay-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Bigger fonts */
+.overlay-content h1 {
+  font-size: 5rem; /* adjust as needed */
+  margin-bottom: 0.5em;
+}
+
+.overlay-content p {
+  font-size: 2rem; /* adjust as needed */
+}
+
+.coming-soon {
+  font-size: 1.2rem;    /* smaller font */
+  font-weight: 400;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: white;
+}
